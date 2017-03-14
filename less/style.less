@@ -7,6 +7,7 @@
 @import "blocks\form-block.less";
 @import "blocks\index-form.less";
 @import "blocks\index-form-button.less";
+@import "blocks\input.less";
 @import "blocks\insurance.less";
 @import "blocks\insurance-block.less";
 @import "blocks\insurance-block-logo.less";
@@ -19,6 +20,7 @@
 @import "blocks\page-header-login.less";
 @import "blocks\page-header-logo.less";
 @import "blocks\page-header-menu.less";
+@import "blocks\rating-days.less";
 @import "blocks\wrapper.less";
 @import "blocks\wrapper-main.less";
 
@@ -30,6 +32,22 @@
   letter-spacing: 2px;
   color: #ffffff;
   background: linear-gradient(to top, #ff552d, #ff2d66);
-  border-color: transparent;
+  border: none;
   border-radius: 8px;
+}
+
+.input__control () {
+  padding: 27px 18px 6px;
+  color: #000034;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+}
+
+.input__label () {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  font-size: 16px;
+  color: #a3a3a3;
 }

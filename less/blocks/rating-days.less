@@ -1,0 +1,67 @@
+.rating-days {
+  .input__control ();
+  position: relative;
+  width: 376px;
+  box-sizing: border-box;
+  padding: 23px 18px 0;
+  border-bottom: 4px solid #dedede;
+}
+
+.rating-days:after {
+}
+
+.rating-days label {
+  padding-right: 27px;
+}
+
+.rating-days label:after {
+  content: " ";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #fd1453;
+  border-radius: 2px;
+}
+
+.rating-days > legend {
+  .input__label ();
+}
+
+.rating-days:not(checked) > input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0,0,0,0);
+}
+
+.rating-days:not(:checked) > label {
+    cursor: pointer;
+    color: #7f7f99;
+}
+
+.rating-days > label:last-child {
+    padding-right: 0;
+}
+
+.rating-days > input:checked + label {
+    color: #fd235e;
+}
+
+.rating-days > input:checked + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 195px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fd235e;
+}
+
+.rating-days > input:checked ~ label:after {
+  display: none;
+}

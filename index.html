@@ -35,12 +35,40 @@
       <div class="main-form__wrapper">
         <div class="main-form__caption">В какую страну вы собираетесь?</div>
         <div class="main-form__price">от 1700Р</div>
-        <form class="">
-          <div class="index-form">
-            <select></select>
-            <input type="text" value="Туристов 2">
-            <input type="text" value="Количество застрахованных дней">
-            <input class="index-form-button" type="submit" value="Сравнить цены">
+        <form class="index-form">
+          <div class="index-form__wrapper">
+            <div class="index-form--country">
+              <select class="index-form__select"  id="input-country">
+                <option>Норвегия</option>
+                <option>Франция</option>
+                <option>Италия</option>
+              </select>
+              <label class="" for="input-country">Страна</label>
+            </div>
+            <div class="index-form--tourist  input">
+              <label class="input__label" for="input-tourist">Туристов</label>
+              <input class="input__control  input__control--tourist" id="input-tourist" type="text" value="2">
+            </div>
+            <div class="index-form--days">
+              <fieldset class="rating-days">
+                <legend>Количество застрахованных дней</legend>
+                <input type="radio" id="day30" name="rating-days" value="30" />
+                <label for="day30">30</label>
+                <input type="radio" id="day45" name="rating-days" value="45" />
+                <label for="day45">45</label>
+                <input type="radio" id="day60" name="rating-days" value="60" />
+                <label for="day60">60</label>
+                <input type="radio" id="day90" name="rating-days" value="90" checked/>
+                <label for="day90">90</label>
+                <input type="radio" id="day180" name="rating-days" value="180" />
+                <label for="day180">180</label>
+                <input type="radio" id="day365" name="rating-days" value="365" />
+                <label for="day365">365</label>
+              </fieldset>
+            </div>
+            <div class="index-form__element">
+              <input class="index-form-button" type="submit" value="Сравнить цены">
+            </div>
           </div>
         </form>
       </div>
